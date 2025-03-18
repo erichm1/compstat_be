@@ -1,4 +1,4 @@
-# 🚀 CompStat (compstat_be/backend)
+# 🚀 CompStat BE (compstat_be/backend)
 
 Este repositório contém o backend do projeto CompStat, uma aplicação desenvolvida para análise e estatísticas geoespaciais. 🗺️📊
 
