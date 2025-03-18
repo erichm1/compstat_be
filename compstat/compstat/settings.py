@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'django_filters',
+    'admin_interface',
+    'colorfield',
     #'django.contrib.gis'
 ]
 

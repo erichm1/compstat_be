@@ -37,4 +37,4 @@ class CrimeIncident(models.Model):
         return self.updated_at.strftime("%Y-%m-%d %H:%M:%S")
 
     class Meta:
-        verbose_name_plural = "Companies"
+        verbose_name_plural = "Crimes"
