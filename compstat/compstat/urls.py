@@ -4,6 +4,7 @@ from rest_framework.routers import DefaultRouter
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from core.views import CrimeIncidentViewSet, CriminalViewSet, CriminalOffenseViewSet
+from crimestats.views import CrimeStatViewSet, CrimeStatSummaryViewSet, CrimeTrendViewSet, CrimeHeatmapViewSet
 from rest_framework import permissions
 from django.conf import settings
 from django.conf.urls.static import static
@@ -12,6 +13,10 @@ router = DefaultRouter()
 router.register(r'crimes', CrimeIncidentViewSet)
 router.register(r'criminals', CriminalViewSet)
 router.register(r'offenses', CriminalOffenseViewSet)
+router.register(r'crime-stats', CrimeStatViewSet)
+router.register(r'crime-stat-summaries', CrimeStatSummaryViewSet)
+router.register(r'crime-trends', CrimeTrendViewSet)
+router.register(r'crime-heatmaps', CrimeHeatmapViewSet)
 
 # Configuração do Swagger
 schema_view = get_schema_view(

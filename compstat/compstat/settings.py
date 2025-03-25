@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'core',
+    'crimestats',
     'drf_yasg', 
     'django_filters',
     #'django.contrib.gis'
